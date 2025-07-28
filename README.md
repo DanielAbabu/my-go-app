@@ -8,9 +8,9 @@ my-go-app/
 ├── config/
 │   └── config.go              # Configuration loader (e.g., viper)
 ├── delivery/
-│   ├── http/
-│   │   ├── user_handler.go    # HTTP handlers (e.g., gin)
-│   │   └── order_handler.go   # Additional handlers
+│   ├── controller/
+│   │   ├── user_controller.go    # HTTP controllers (e.g., gin)
+│   │   └── order_controllers.go   # Additional controllers
 │   └── route/
 │       └── routes.go          # HTTP route setup
 ├── domain/
@@ -46,8 +46,8 @@ my-go-app/
 # Quick Guide
 - **cmd/api/**: `main.go` starts the app (uses `github.com/gin-gonic/gin`).
 - **config/**: `config.go` loads settings, including Twilio API key (uses `github.com/spf13/viper`).
-- **delivery/**: HTTP handlers (`http/`) and routes (`route/`, uses `gin`).
-  - `user_handler.go`, `order_handler.go`: Handle API endpoints.
+- **delivery/**: HTTP controllers (`controller/`) and routes (`route/`, uses `gin`).
+  - `user_controller.go`, `order_controller.go`: Handle API endpoints.
 - **domain/**: Business models and repository interfaces.
   - `user.go`: Defines User struct.
   - `repository.go`: Defines repository interfaces.
