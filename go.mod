@@ -1,0 +1,1 @@
+module my-go-app\n\ngo 1.22\n\nrequire (\n    github.com/gin-gonic/gin v1.10.0\n    github.com/jmoiron/sqlx v1.4.0\n    github.com/spf13/viper v1.19.0\n    go.uber.org/zap v1.27.0\n    github.com/stretchr/testify v1.9.0\n    github.com/twilio/twilio-go v1.22.0\n)
